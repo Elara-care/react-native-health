@@ -185,6 +185,11 @@
         return HKObjectType.electrocardiogramType;
     }
 
+    // Reproductive Health
+    if([@"MenstrualFlow" isEqualToString:key]) {
+        return [HKObjectType categoryTypeForIdentifier:HKCategoryTypeIdentifierMenstrualFlow];
+    }
+
     // Sleep
     if ([@"SleepAnalysis" isEqualToString: key]) {
         return [HKObjectType categoryTypeForIdentifier:HKCategoryTypeIdentifierSleepAnalysis];

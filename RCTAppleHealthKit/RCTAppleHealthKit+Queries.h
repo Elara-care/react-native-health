@@ -103,4 +103,7 @@
                      endDate:(NSDate *)endDate
                   completion:(void (^)(NSArray *, NSError *))completionHandler;
 
+- (void)fetchMenstrualCategorySamplesForPredicate:(NSPredicate *)predicate
+                                   limit:(NSUInteger)lim
+                                   completion:(void (^)(NSArray *, NSError *))completion;
 @end

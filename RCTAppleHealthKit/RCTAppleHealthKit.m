@@ -23,6 +23,7 @@
 #import "RCTAppleHealthKit+Methods_Hearing.h"
 #import "RCTAppleHealthKit+Methods_Summary.h"
 #import "RCTAppleHealthKit+Methods_ClinicalRecords.h"
+#import "RCTAppleHealthKit+Methods_Reproductive.h"
 
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventDispatcher.h>
@@ -205,6 +206,12 @@ RCT_EXPORT_METHOD(getStepCount:(NSDictionary *)input callback:(RCTResponseSender
 {
     [self _initializeHealthStore];
     [self fitness_getStepCountOnDay:input callback:callback];
+}
+
+RCT_EXPORT_METHOD(getMenstrualFlow:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self _initializeHealthStore];
+    [self reproductive_getMenstrualSamples:input callback:callback];
 }
 
 RCT_EXPORT_METHOD(getSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
