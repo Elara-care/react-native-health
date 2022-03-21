@@ -414,6 +414,11 @@ declare module 'react-native-health' {
       callback: (err: string, results: Array<HealthActivitySummary>) => void,
     ): void
 
+    getMenstrualFlow(
+      options: HealthInputOptions,
+      callback: (err: string, results: Array<HealthValue>) => void,
+    ): void
+
     Constants: Constants
   }
 
@@ -714,6 +719,9 @@ declare module 'react-native-health' {
     WalkingHeartRateAverage = 'WalkingHeartRateAverage',
     Weight = 'Weight',
     Workout = 'Workout',
+    MenstrualFlow = 'MenstrualFlow',
+    SexualActivity = 'SexualActivity',
+    IntermenstrualBleeding = 'IntermenstrualBleeding',
   }
 
   export enum HealthUnit {

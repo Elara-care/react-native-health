@@ -91,5 +91,7 @@ export const Permissions = {
   WalkingHeartRateAverage: 'WalkingHeartRateAverage',
   Weight: 'Weight',
   Workout: 'Workout',
-  MenstrualFlow: "MenstrualFlow"
+  MenstrualFlow: "MenstrualFlow",
+  SexualActivity: "SexualActivity",
+  IntermenstrualBleeding: "IntermenstrualBleeding"
 }
